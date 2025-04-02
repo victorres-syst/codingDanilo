@@ -1,0 +1,61 @@
+<!DOCTYPE html> - Declaração do tipo de documento HTML.
+
+<html> - Define o início e o fim de um documento HTML.
+
+<head> - Contém metadados sobre o documento, como o título, links de estilos, scripts, etc.
+
+<title> - Define o título da página, que aparece na aba do navegador.
+
+<meta> - Fornece metadados sobre o documento, como a codificação de caracteres.
+
+<link> - Usada para vincular arquivos externos, como folhas de estilo CSS.
+
+<style> - Permite incluir estilos CSS diretamente no HTML.
+
+<body> - Contém o conteúdo visível da página.
+
+<h1>, <h2>, <h3>, etc. - Define os títulos, de <h1> (mais importante) até <h6> (menos importante).
+
+<p> - Define um parágrafo de texto.
+
+<a> - Define um link (âncora) para navegar entre páginas ou para URLs externas.
+
+<img> - Insere uma imagem na página.
+
+<ul> - Cria uma lista não ordenada (sem números).
+
+<ol> - Cria uma lista ordenada (com números).
+
+<li> - Define um item de lista (usado dentro de <ul> ou <ol>).
+
+<div> - Define uma divisão ou seção no documento, geralmente usada para agrupar conteúdo.
+
+<span> - Define um trecho de texto, utilizado para aplicar estilos em partes específicas do conteúdo.
+
+<table> - Cria uma tabela.
+
+<tr> - Define uma linha em uma tabela.
+
+<td> - Define uma célula de dados dentro de uma linha de tabela.
+
+<th> - Define uma célula de cabeçalho em uma tabela.
+
+<form> - Define um formulário para coleta de dados do usuário.
+
+<input> - Define um campo de entrada para o usuário preencher em um formulário.
+
+<button> - Define um botão clicável.
+
+<br> - Insere uma quebra de linha.
+
+<hr> - Insere uma linha horizontal (divisória).
+
+<iframe> - Insere um quadro (frame) dentro de outro documento HTML.
+
+<script> - Define um bloco de código JavaScript.
+
+<link> - Relaciona a página com recursos externos, como arquivos CSS.
+
+<audio> - Insere conteúdo de áudio.
+
+<video> - Insere conteúdo de vídeo.
