@@ -1,36 +1,49 @@
+TELA INICIAL
+
+<body><center><h1>Curriculo Pessoal</h1></center></body>
+
+<center><iframe src="Inicio" width="600px" height="400px" name="main"></iframe></center>
+
+<center><a href="Inicio.html" target="main">Inicio - </a>
+<a href="Informações.html" target="main">Informações - </a>
+<a href="Formação.html" target="main">Formação - </a>
+<a href="Experciência profissional.html" target="main">Experiencia Profissional - </a>
+<a href="Hobbies.html" target="main">Hobbies</a></center>
+
+INFORMAÇÕES
 <body>
-    <h1>VICTOR TORRES SILVA DE MELO</h1>
+    <center><h2>VICTOR TORRES SILVA DE MELO</h2></center>
     <p><strong>Email:</strong> victor.melo@edu.pe.senac.br</p>
     <p><strong>Telefone:</strong> (81) 99855-7875</p>
-    <p><strong>Endereço:</strong> Pina - Recife - PE</p>
-    
-    <h2>Formação</h2>
-    <p><strong>Estudante em Analise e Desenvolvemento de Sistemas</strong> - SENAC </p>
-    <p><strong>Técnico em Segurança do Trabalho </strong> - Grau Técnico (2016)</p>
-  
-    <h2>Experiência Profissional</h2>
-    <p><strong>Cargo</strong> - Estoquista/ Vendedor - Atacado da Construção (2017 - 2019)</p>
-    <p>
-        No inicio da contratação fui para o setor do estoque para aprender sobre os itens e os equemas de vendas 
-    da loja, posteriormente fui para o cargo de vendedor onde virou a principal função. Passei um tempo
-     como presidente da CIPA (Comissão Interna de Prevenção de Acidentes) e pude agregar bastente com meu
-      conhecimento tecnico.
-    </p>
-      
-    <p><strong>Cargo</strong> - Motorista particular e Por aplicativos. (2020 - Hoje)</p>
-    
-    <h2>Conhecimentos</h2>
-    <ul>
-        <li>Pacote Office</li>
-        <li>Java Script</li>
-        <li>HTML</li>
-        <li>Figma</li>
-        <li>SQL</li>      
-    </ul>
-  <h2>Diferenciais</h2>
-    <ul>
-         <li>Ingles Basico/Intermediario</li>
-         <li> CNH - B (2017)
-    </ul>
-</body>
-</html>
+    <p><strong>Endereço:</strong> Rua Artur Licio - Pina - Recife - PE</p>
+ENDEREÇO
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0954702229465!2d-34.891513624109244!3d-8.091746191936807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
+7ab1f3e5badd73f%3A0xe1844cffa883fb37!2sR.%20Artur%20L%C3%ADcio%20-%20Pina%2C%20Recife%20-%20PE%2C%2051011-150!5e0!3m2!1spt-BR!2sbr!4v1743600213498!5m2!1spt-BR!2sbr" width="600" height=
+"450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+TABELA
+
+<table>
+    <tr>
+        <th>Instituição</th>
+        <th>Cargo</th>
+        <th>Periodo</th>
+        <th>Descrição</th>
+    </tr>
+    <tr>
+        <td>Atacado da construção</td>
+        <td>Vendedor e Estoquista</td>
+        <td>2017 - 2018</td>
+        <td>Atuando primordialmente como vendedore e auxiliar de estoque. Tambem tive 
+            participação na CIPA da empresa por um periodo de 6 meses.</td>
+          </tr>
+    <tr>
+        <td>Motorista</td>
+        <td>Particular e por Aplicativos</td>
+        <td>2020 - Atual</td>
+        <td></td>
+
+    </tr>
+</table>
+
