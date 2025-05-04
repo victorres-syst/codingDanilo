@@ -1,0 +1,14 @@
+// inicia o git (cria o repositorio)
+git init
+
+// verifica alterações de pastas e arquivos
+git status
+
+// adidiona pastas e arquivos modificados (no stage area ou seja, atualiza o github)
+git add .
+
+//cria e descreve um ponto na historia
+git commit -m "mensagem que vc quer aqui"
+
+//historico de commits do projeto
+git log
