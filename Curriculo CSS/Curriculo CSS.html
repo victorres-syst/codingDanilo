@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="fotoCurriculo.jpg" type="image/png">
+    <title>Portfólio - Victor Torres</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .header-bg {
+            background: #fffffff2;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -8px;
+            left: 0;
+            background: linear-gradient(90deg, #000000 0%, #555555 100%);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #000000;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px #0000001a, 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-900">
+    <!-- Header Fixo -->
+    <header class="header-bg fixed w-full z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo no Header -->
+                <div class="text-2xl font-bold tracking-tighter">
+                    <span class="bg-black text-white px-5 py-2">PORTFÓLIO</span>
+                </div>
+                
+                <!-- Navigação -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="nav-link font-medium">Início</a>
+                    <a href="#sobre" class="nav-link font-medium">Sobre</a>
+                    <a href="#experiencia" class="nav-link font-medium">Experiência</a>
+                    <a href="#hobbies" class="nav-link font-medium">Hobbies</a>
+                    <a href="#endereco" class="nav-link font-medium">Endereço</a>
+                    <a href="#contato" class="nav-link font-medium">Contato</a>
+
+                </nav>
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Inicio -->
+    <section id="inicio" class="hero-section min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                        Olá, eu sou <span class="text-blue-600">Victor Torres</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-700 mb-8">
+                        Dev | Designer | Criativo
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#sobre" class="bg-black text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition duration-300">
+                            Conheça mais sobre mim
+                        </a>
+                        <a href="#endereco" class="border-2 border-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition duration-300">
+                            Onde me encontrar
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-xl">
+                        <!-- Lugar para colocar a foto -->
+                        <div class="w-full h-full bg-gray-300 flex items-center justify-center">
+                            <i class="fas fa-user text-6xl text-gray-500"></i>
+                            <img src="fotoCurriculo.jpg" alt ="Foto de Perfil">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Sobre</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden p-6 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-graduation-cap text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Graduando em Análise e Desenvolvimento de Sistemas</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Faculdade SENAC-PE</p>
+                    <p class="text-gray-500 text-sm">2024 - Atual</p>
+                    <p class="mt-4 text-gray-700">
+                        Atualmente cursando o 2º periodo
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden p-6 border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-certificate text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Téc. em Segurança do Trabalho</h3>
+                    </div>
+                    <p class="text-gray-600 mb-4">Gráu Técnico PE</p>
+                    <p class="text-gray-500 text-sm">2016 (Jan.) - 2017 (Dez.)</p>
+                    <p class="mt-4 text-gray-700">
+                        Conhecimento e normas regulamentadoras (NR's), prevenção de riscos ocupacionais experiência em análise de ambientes e elaboração de relatórios técnicos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Experiência -->
+    <section id="experiencia" class="py-20 bg-gray-80">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Experiência Profissional</h2>
+            
+            <div class="space-y-8">
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden p-8 border border-gray-100">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-bold">Vendedor - Estoquista</h3>
+                        <span class="text-gray-500 text-sm">Jan 2017 - Julho 2018</span>
+                    </div>
+                    <p class="text-blue-600 font-medium mb-4">Atacado da Construção LTDA</p>
+                    <p class="text-gray-700 mb-4">
+                        Atividade principal era fazer vendas dos produtos, operar o maquinário de produção de tintas, auxiliar na organização das prateleiras e estoque da loja. Tive uma breve participação como "Cipeiro" na empresa.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Venda</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Operador de Maquinas</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Integrante da CIPA</span>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white rounded-xl shadow-md overflow-hidden p-8 border border-gray-100">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <h3 class="text-xl font-bold">Motorista Particular e por Aplicativos</h3>
+                        <span class="text-gray-500 text-sm">Fev 2020 - Atualmente</span>
+                    </div>
+                    <p class="text-blue-600 font-medium mb-4">Uber</p>
+                    <p class="text-gray-700 mb-4">
+                        Viagens particulares e por app.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Simpático</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Profissional</span>
+                        <span class="bg-gray-100 px-3 py-1 rounded-full text-sm">Habilidade no volante</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Hobbies</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Hobby 1 -->
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-camera-retro text-5xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Jogos</h3>
+                        <p class="text-gray-600">
+                            Curto uma boa partida online, seja pra competir, dar risada ou só esquecer da vida por umas horinhas.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Hobby 2 -->
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-code text-5xl text-green-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Programação</h3>
+                        <p class="text-gray-600">
+                            Sou daqueles que fica empolgado com cada novidade tecnológica. Se lançou, já tô querendo entender como funciona!
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Hobby 3 -->
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-music text-5xl text-yellow-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Musculação</h3>
+                        <p class="text-gray-600">
+                            Começou como uma obrigação e hoje virou parte da minha rotina, hoje é simplesmente indispensável cuidar da saúde.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Hobby 4 -->
+                <div class="card-hover bg-gray-50 rounded-xl overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-plane text-5xl text-purple-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Barzinho ou Restaurante</h3>
+                        <p class="text-gray-600">
+                            E nada como uma cerveja gelada pra brindar a sobrevivência da semana rsrs. Se tiver papo bom e música, melhor ainda!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endereço -->
+    <section id="endereco" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-3xl font-bold mb-16 text-center">Onde Me Encontrar</h2>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-black text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Endereço</h4>
+                                    <p class="text-gray-600">R. Artur Lício - Pina, Recife - PE, 51011-150</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-black text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p class="text-gray-600">victor.melo@edu.pe.senac.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-black text-white p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">WhatsApp</h4>
+                                    <p class="text-gray-600">(81) 99855-7875</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="h-full rounded-xl overflow-hidden shadow-lg">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0955222804505!2d-34.89151362618938!3d-8.091740880915724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f3e5badd73f%3A0xe1844cffa883fb37!2sR.%20Artur%20L%C3%ADcio%20-%20Pina%2C%20Recife%20-%20PE%2C%2051011-150!5e0!3m2!1spt-BR!2sbr!4v1743818314693!5m2!1spt-BR!2sbr" 
+                            width="100%" 
+                            height="100%" 
+                            style="min-height: 400px;"
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- Contato -->
+            <section id="contato" class="section bg-white py-20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-4xl font-bold mb-16 text-center animate-fade-in">Entre em Contato</h2>
+                    
+                    <form id="contactForm" class="space-y-6 animate-fade-in delay-1">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-gray-700 mb-1">Nome*</label>
+                                <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                            </div>
+                            
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-gray-700 mb-1">Sobrenome*</label>
+                                <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone*</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black" placeholder="(00) 00000-0000">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email*</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black" placeholder="seu@email.com">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem*</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="language" class="block text-sm font-medium text-gray-700 mb-1">Língua aplicada no serviço*</label>
+                            <select id="language" name="language" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                                <option value="">Selecione uma opção</option>
+                                <option value="english">Inglês</option>
+                                <option value="spanish">Espanhol</option>
+                                <option value="french">Francês</option>
+                                <option value="portuguese">Português (pt-br)</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="file" class="block text-sm font-medium text-gray-700 mb-1">Upload de arquivo (PDF, DOC, DOCX, JPEG ou PNG)*</label>
+                            <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required class="w-full px-4 py-2 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Linguagens de programação preferidas*</label>
+                            <div class="grid md:grid-cols-2 gap-2">
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="javascript" name="languages" value="javascript" class="h-4 w-4 text-black focus:ring-black border-gray-300 rounded">
+                                    <label for="javascript" class="ml-2 text-sm text-gray-700">JavaScript</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="python" name="languages" value="python" class="h-4 w-4 text-black focus:ring-black border-gray-300 rounded">
+                                    <label for="python" class="ml-2 text-sm text-gray-700">Python</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="java" name="languages" value="java" class="h-4 w-4 text-black focus:ring-black border-gray-300 rounded">
+                                    <label for="java" class="ml-2 text-sm text-gray-700">Java</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="csharp" name="languages" value="csharp" class="h-4 w-4 text-black focus:ring-black border-gray-300 rounded">
+                                    <label for="csharp" class="ml-2 text-sm text-gray-700">C#</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="php" name="languages" value="php" class="h-4 w-4 text-black focus:ring-black border-gray-300 rounded">
+                                    <label for="php" class="ml-2 text-sm text-gray-700">PHP</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="checkbox" id="ruby" name="languages" value="ruby" class="h-4 w-4 text-black focus:ring-black border-gray-300 rounded">
+                                    <label for="ruby" class="ml-2 text-sm text-gray-700">Ruby</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de banco de dados recomendado*</label>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <input type="radio" id="sql" name="database" value="sql" required class="h-4 w-4 text-black focus:ring-black border-gray-300">
+                                    <label for="sql" class="ml-2 text-sm text-gray-700">SQL (MySQL, PostgreSQL, SQL Server)</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="nosql" name="database" value="nosql" class="h-4 w-4 text-black focus:ring-black border-gray-300">
+                                    <label for="nosql" class="ml-2 text-sm text-gray-700">NoSQL (MongoDB, Cassandra)</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="both" name="database" value="both" class="h-4 w-4 text-black focus:ring-black border-gray-300">
+                                    <label for="both" class="ml-2 text-sm text-gray-700">Ambos, dependendo do caso de uso</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="meetingTime" class="block text-sm font-medium text-gray-700 mb-1">Turno de preferência para reuniões*</label>
+                                <select id="meetingTime" name="meetingTime" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                                    <option value="">Selecione um turno</option>
+                                    <option value="morning">Manhã (8h-12h)</option>
+                                    <option value="afternoon">Tarde (13h-18h)</option>
+                                    <option value="evening">Noite (18h-22h)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="bestTime" class="block text-sm font-medium text-gray-700 mb-1">Melhor horário sugerido para reuniões*</label>
+                                <input type="time" id="bestTime" name="bestTime" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="deliveryDate" class="block text-sm font-medium text-gray-700 mb-1">Previsão de entrega desejada*</label>
+                            <input type="date" id="deliveryDate" name="deliveryDate" required class="w-full px-4 py-3 border border-gray-300 rounded-lg form-input focus:border-black focus:ring-1 focus:ring-black">
+                        </div>
+                        
+                        <div class="flex justify-end space-x-4 pt-4">
+                            <button type="reset" id="resetBtn" class="px-6 py-3 border border-gray-300 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Limpar</button>
+                            <button type="submit" id="submitBtn" class="px-6 py-3 bg-black text-white rounded-lg font-medium hover:bg-gray-800 transition duration-300">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold">Victor Torres Silva de Melo</h2>
+                    <p class="text-gray-400 mt-2">Desenvolvedor & Designer</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#inicio" class="text-gray-400 hover:text-white transition duration-300">Início</a>
+                    <a href="#sobre" class="text-gray-400 hover:text-white transition duration-300">Sobre</a>
+                    <a href="#experiencia" class="text-gray-400 hover:text-white transition duration-300">Experiência</a>
+                    <a href="#hobbies" class="text-gray-400 hover:text-white transition duration-300">Hobbies</a>
+                    <a href="#endereco" class="text-gray-400 hover:text-white transition duration-300">Endereço</a>
+                    <a href="#contato" class="text-gray-400 hover:text-white transition duration-300">Contato</a>
+
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">
+                    Victor Torres © Copyright 2025 - Todos os direitos reservados.
+                </p>               
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
